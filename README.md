@@ -25,11 +25,12 @@ All the message sent from the M-START Server will have in their address `/client
 
 ### Sending a message
 There are to ways to send a message:
-1. using the convinience methods of `DataManagement`:
+
+* using the convinience methods of `DataManagement`:
 ```java
   dm.sendInt(356, "/robot/object/axis/1/intprop/rotation");
 ```
-2. using `sendMessage` in `DataManagement`. In this case, you will need to compose the OSC message and set the composer as an argument:
+* using `sendMessage` in `DataManagement`. In this case, you will need to compose the OSC message and set the composer as an argument:
 ```java
   OscComposer c = new OscComposer("/robot/object/axis/1/intprop/rotation");
   c.pushInt32(356);
