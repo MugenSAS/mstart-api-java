@@ -4,6 +4,7 @@ This is the JAVA API to easily connect, send and receive messages from an M-STAR
 ### The classes
 **ClientSocket** is the class which manages connection, sending and receiving messages from an M-START Server.
 **DataManagement** is the class which handles the OSC messages and provides and notification mechanism for any newly received messages as well as some convinient methods to send OSC messages to the M-START Server.
+
 **ApplicationStub** is the skeleton of class which can be used to create an application which will process received OSC messages and send OSC messages regarding the status and data of connected system that can be useful to users.
 
 ### Processing a message
